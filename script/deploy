@@ -1,0 +1,7 @@
+ssh app@APP.SERVER.IP.ADDRESS <<EOF
+  cd /home/memo/git/hello-jenkins
+  git pull
+  npm install --production
+  forever restartall
+  exit
+EOF
